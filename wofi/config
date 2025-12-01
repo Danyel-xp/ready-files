@@ -1,0 +1,19 @@
+# Wofi Config File
+# local: ~/.config/wofi/config
+
+################################################
+############  CONFIGURAÇÕES DO WOFI ############
+################################################
+
+# O MODO PRINCIPAL: drun (Desktop Run) lista os aplicativos instalados 
+# com base em seus arquivos .desktop.
+mode=drun
+
+# Define o terminal a ser usado quando um aplicativo precisar de um terminal.
+# Se estiver usando o Kitty, isso garante que ele seja usado:
+term=kitty
+
+# Outras opções comuns:
+allow_images=true       # Permite ícones (se o seu ambiente Wayland suportar)
+insensitive=true        # Pesquisa sem diferenciar maiúsculas/minúsculas
+prompt=Run              # O texto que aparece na caixa de pesquisa

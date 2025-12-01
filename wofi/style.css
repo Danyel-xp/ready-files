@@ -1,0 +1,23 @@
+/* ~/.config/wofi/style.css */
+
+window {
+    /* Define o fundo da janela principal */
+    background-color: #2e3440;
+    font-family: "FiraCode Nerd Font";
+    border-radius: 12px;
+}
+
+#entry {
+    /* Define a cor do texto digitado */
+    color: #eceff4;
+}
+
+#text {
+    /* Define a cor do texto dos aplicativos na lista */
+    color: #d8dee9;
+}
+
+#entry:selected {
+    /* Define a cor de fundo do item selecionado */
+    background-color: #5e81ac;
+}
