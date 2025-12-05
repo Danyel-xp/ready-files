@@ -5,15 +5,17 @@
 ############  CONFIGURAÇÕES DO WOFI ############
 ################################################
 
-# O MODO PRINCIPAL: drun (Desktop Run) lista os aplicativos instalados 
-# com base em seus arquivos .desktop.
-mode=drun
+# O MODO PRINCIPAL
+mode=dru
 
 # Define o terminal a ser usado quando um aplicativo precisar de um terminal.
-# Se estiver usando o Kitty, isso garante que ele seja usado:
 term=kitty
 
-# Outras opções comuns:
-allow_images=true       # Permite ícones (se o seu ambiente Wayland suportar)
+
+allow_images=true       # ícones
 insensitive=true        # Pesquisa sem diferenciar maiúsculas/minúsculas
-prompt=Run              # O texto que aparece na caixa de pesquisa
+prompt=Welcome          # O texto que aparece na caixa de pesquisa
+
+# Tamanho da janela
+width = 400px
+height = 400px

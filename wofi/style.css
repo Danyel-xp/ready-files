@@ -1,15 +1,30 @@
 /* ~/.config/wofi/style.css */
+*{ 
+    border-radius: 10px;
+    border:none;
+}
 
 window {
     /* Define o fundo da janela principal */
-    background-color: #2e3440;
+    background-color: rgba(0, 0, 0, 0.1);
     font-family: "FiraCode Nerd Font";
     border-radius: 12px;
+    border: 1px solid #ffffff;
+    border-color: rgb(77, 28, 122);
+    color: #ffffff;
 }
 
 #entry {
     /* Define a cor do texto digitado */
     color: #eceff4;
+    padding: 0.25em;
+    background: linear-gradient(90deg, #bbccdd,#cca5dd);
+}
+
+#entry:selected {
+    /* cor de fundo do item selecionado */
+    background-color: #5e81ac;
+    color: #ffffff;
 }
 
 #text {
@@ -17,7 +32,19 @@ window {
     color: #d8dee9;
 }
 
-#entry:selected {
-    /* Define a cor de fundo do item selecionado */
-    background-color: #5e81ac;
+#text::selected {
+    /*cor da font quando selecionado*/
+    color:blue ;
 }
+
+#input {
+    /* Cor da entrada de */
+    background-color: lightskyblue;
+    color: violet;
+    padding: 0.25em;
+}
+img {
+    /* Tamanho dos icones*/
+    margin-right: .25em;
+    margin-left: .25em;
+ }
