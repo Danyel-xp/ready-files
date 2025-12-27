@@ -1,33 +1,94 @@
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "display",
-    "de",
-    "wm",
-    "wmtheme",
-    "theme",
-    "icons",
-    "font",
-    "cursor",
-    "terminal",
-    "terminalfont",
-    "cpu",
-    "gpu",
-    "memory",
-    "swap",
-    "disk",
-    "localip",
-    "battery",
-    "poweradapter",
-    "locale",
-    "break",
-    "colors"
-  ]
+{
+    "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/img/misato.png",
+        "type": "kitty-direct",
+        "width": 30,
+        "padding": {
+            "top": 0,
+            "left": 2,
+            "right": 7
+        }
+    },
+    "display": {
+        "separator": "  "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "os",
+            "key": " {#38;5;55}OS    {#38;5;216}➜{#keys}",
+            "format": "{3}"
+        },
+        {
+            "type": "kernel",
+            "key": "  {#38;5;55}├   {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "uptime",
+            "key": "  {#38;5;55}├ 󰅐  {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "terminal",
+            "key": "  {#38;5;55}└   {#38;5;216}➜{#keys}"
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": " {#38;5;229}VM    {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "theme",
+            "key": "  {#38;5;229}├ 󰉼  {#38;5;216}➜{#keys}" 
+        },
+        {
+            "type": "icons",
+            "key": "  {#38;5;229}├ 󰓎  {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "cursor",
+            "key": "  {#38;5;229}├   {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "shell",
+            "key": "  {#38;5;229}├   {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "font",
+            "key": "  {#38;5;229}└   {#38;5;216}➜{#keys}"
+        },
+        "break",
+        {
+            "type": "chassis",
+            "key": " {#38;5;26}PC    {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "cpu",
+            "key": "  {#38;5;26}├   {#38;5;216}➜{#keys}",
+            "format": "{1} @ {8}"
+        },
+        {
+            "type": "gpu",
+            "key": "  {#38;5;26}├   {#38;5;216}➜{#keys}"
+        },
+        {
+            "type": "memory",
+            "key": "  {#38;5;26}├   {#38;5;216}➜{#keys}",
+            "format": "{1} / {2} ({3})"
+        },
+        {
+            "type": "disk",
+            "key": "  {#38;5;26}├ 󰋊  {#38;5;216}➜{#keys}",
+            "format": "{1} de {2} ocupado"
+        },
+        {
+            "type": "monitor",
+            "key": "  {#38;5;26}└   {#38;5;216}➜{#keys}"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "   {#38;5;55}⦿  {#38;5;229}⦿  {#38;5;26}⦿  {#38;5;015}⦿  {#38;5;226}⦿  {#38;5;43}⦿"
+        }
+    ]
 }
